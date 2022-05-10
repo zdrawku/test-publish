@@ -1,0 +1,15 @@
+<igx-slider [value]="0" [continuous]="true" [minValue]="0" [maxValue]="100" [secondaryTickLabels]="false" class="slider"></igx-slider>
+<igx-snackbar actionText="Action" (clicked)="snackbar.toggle()" #snackbar class="snackbar">
+  This is a message
+</igx-snackbar>
+<button igxButton="raised" igxRipple [igxToggleAction]="snackbar" class="user-input">
+  Button
+</button>
+<button igxButton="raised" igxRipple [igxToggleAction]="dropdown" class="user-input">
+  Button
+</button>
+<igx-drop-down #dropdown class="user-input">
+  <igx-drop-down-item>
+    Option
+  </igx-drop-down-item>
+</igx-drop-down>
